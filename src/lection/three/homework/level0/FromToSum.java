@@ -3,6 +3,7 @@ package lection.three.homework.level0;
 public class FromToSum {
     public static void main(String[] args) {
         int[] fromTo = {8, 12, 89, 5};
+        //todo: fix this condition:
         if (fromTo.length > fromTo.length - 1) {
             throw new IllegalArgumentException("Illegal Argument Exception");
         } else {
