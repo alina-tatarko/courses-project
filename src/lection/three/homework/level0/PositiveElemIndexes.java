@@ -1,6 +1,5 @@
 package lection.three.homework.level0;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class PositiveElemIndexes {
