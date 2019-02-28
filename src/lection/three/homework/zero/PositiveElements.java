@@ -1,4 +1,4 @@
-package lection.three.homework.level0;
+package lection.three.homework.zero;
 
 public class PositiveElements {
     public static void main(String[] args) {

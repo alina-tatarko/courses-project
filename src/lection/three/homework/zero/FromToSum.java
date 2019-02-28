@@ -1,4 +1,4 @@
-package lection.three.homework.level0;
+package lection.three.homework.zero;
 
 public class FromToSum {
     public static void main(String[] args) {
