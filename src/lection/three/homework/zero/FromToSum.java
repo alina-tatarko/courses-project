@@ -2,20 +2,19 @@ package lection.three.homework.zero;
 
 public class FromToSum {
     public static void main(String[] args) {
-        int[] fromTo = {8, 12, 89, 5};
-        //todo: fix this condition:
-        if (fromTo.length > fromTo.length - 1) {
-            throw new IllegalArgumentException("Illegal Argument Exception");
-        } else {
-            System.out.println(summery(fromTo));
-        }
+        int from = 6;
+        int to = 4;
+        System.out.println(rangeSum(from, to));
     }
 
-    public static int summery(int[] fromTo) {
-        int zero = 0;
-        for (int elem : fromTo) {
-            zero += elem;
+    public static int rangeSum(int from, int to) {
+        if (from > to) {
+            throw new IllegalArgumentException();
         }
-        return zero;
+        int sum = 0;
+        for (int i = from; i <= to; i++) {
+            sum += i;
+        }
+        return sum;
     }
 }

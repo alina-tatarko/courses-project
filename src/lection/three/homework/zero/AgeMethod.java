@@ -10,7 +10,6 @@ public class AgeMethod {
     }
 
     public static boolean age(int n) {
-        boolean ageDef = (n >= 1 && n <= 120);
-        return ageDef;
+        return (n >= 1 && n <= 120);
     }
 }

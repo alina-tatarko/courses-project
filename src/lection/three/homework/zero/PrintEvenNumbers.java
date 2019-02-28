@@ -4,14 +4,19 @@ import java.util.Arrays;
 
 public class PrintEvenNumbers {
     public static void main(String[] args) {
-        int[] elems = {9, 22, 1, 7, 30};
-        PrintEvens(elems);
+        int from = 2;
+        int to = 7;
+        printEvens(from, to);
     }
 
-    public static void PrintEvens(int[] fromTo) {
-        for (int even : fromTo) {
-
-            System.out.println(Arrays.toString(fromTo));
+    public static void printEvens(int from, int to) {
+        if (from > to) {
+            throw new IllegalArgumentException();
+        }
+        for (int i = from; i <= to; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
         }
     }
 }
